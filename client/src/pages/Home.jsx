@@ -1,6 +1,6 @@
 import Card from "../components/card";
 import { Link } from "react-router-dom";
-import { Leaf } from "lucide-react";
+import { Leaf, MoveRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -12,29 +12,28 @@ export default function Home() {
             <span className="text-xl font-bold">Bulbasaur</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-            <Link
-              href="#features"
-              className="transition-colors hover:text-primary"
-            >
+            <Link href="/home" className="transition-colors hover:text-primary">
               Home
             </Link>
             <Link
-              href="#markets"
+              to="/dashboard"
               className="transition-colors hover:text-primary"
             >
               Map
             </Link>
-            <Link href="#demo" className="transition-colors hover:text-primary">
+            <Link
+              to="/dashboard"
+              className="transition-colors hover:text-primary"
+            >
               About
             </Link>
             <Link
-              href="#pricing"
+              to="/dashboard"
               className="transition-colors hover:text-primary"
             >
               Pricing
             </Link>
           </nav>
-          {/* <Button>Get Started</Button> */}
         </div>
       </header>
       <main className="flex-1">
@@ -63,12 +62,16 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-4">
-                  <button className="bg-[#83ba36] text-lg px-8 py-4 rounded-lg border-1 border-gray-300 hover:bg-[#2a513f] hover:cursor-pointer hover:border-black font-semibold text-white">
-                    Use Bulbasaur{" "}
-                  </button>
-                  <button className="text-lg px-8 py-4 rounded-lg border-1 border-gray-300 hover:bg-[#2a513f] hover:cursor-pointer hover:border-black font-semibold hover:text-white">
-                    Demo{" "}
-                  </button>
+                  <Link to="/dashboard">
+                    <button className="bg-[#83ba36] text-lg px-8 py-4 rounded-lg border-1 border-gray-300 hover:bg-[#2a513f] hover:cursor-pointer hover:border-black font-semibold text-white flex items-center gap-4">
+                      Use Bulbasaur <MoveRight />
+                    </button>
+                  </Link>
+                  <Link to="/dashboard">
+                    <button className="text-lg px-8 py-4 rounded-lg border-1 border-gray-300 hover:bg-[#2a513f] hover:cursor-pointer hover:border-black font-semibold hover:text-white">
+                      Demo{" "}
+                    </button>
+                  </Link>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-8">
                   <div className="space-y-2">
@@ -173,7 +176,7 @@ export default function Home() {
               <div className="relative aspect-video rounded-xl overflow-hidden">
                 <iframe
                   className="absolute inset-0 w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/S0JzROfPHL8?si=pqDJ_hPTWpumxn91"
                   title="Ved Indicator Demo"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -181,9 +184,11 @@ export default function Home() {
               </div>
             </div>
             <div className="text-center">
-              {/* <Button size="lg" className="gap-2">
-                <Play className="w-4 h-4" /> Start Your Free Trial
-              </Button> */}
+              <Link to="/dashboard">
+                <button className="bg-[#83ba36] text-lg px-8 py-4 rounded-lg border-1 border-gray-300 hover:bg-[#2a513f] hover:cursor-pointer hover:border-black font-semibold text-white">
+                  Start Using Bulbasaur
+                </button>
+              </Link>
             </div>
           </div>
         </section>
