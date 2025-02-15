@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.0.6",
     "lucide-react": "^0.475.0",
     "react": "^19.0.0",
+    "react-azure-maps": "^1.0.2",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.5",
     "tailwindcss": "^4.0.6"

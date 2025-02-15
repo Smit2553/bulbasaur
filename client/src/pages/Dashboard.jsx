@@ -1,4 +1,5 @@
 import { AlertTriangle, Map, Info } from "lucide-react";
+import DefaultMap from "../components/DefaultMap";
 
 export default function Dashboard() {
   return (
@@ -34,9 +35,7 @@ export default function Dashboard() {
             <h2 className="text-xl font-semibold mb-2 flex items-center">
               <Map className="mr-2" /> Fire Map
             </h2>
-            <div className="bg-gray-300 h-64 rounded-lg flex items-center justify-center">
-              Map Placeholder
-            </div>
+            <DefaultMap />
           </div>
           <div className="space-y-4">
             <div className="bg-orange-100 p-4 rounded-lg">
