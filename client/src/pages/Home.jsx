@@ -1,13 +1,6 @@
+import Card from "../components/card";
 import { Link } from "react-router-dom";
-import {
-  ArrowRight,
-  BarChart2,
-  Globe2,
-  LineChart,
-  TrendingUp,
-  Leaf,
-  Play,
-} from "lucide-react";
+import { Leaf } from "lucide-react";
 
 export default function Home() {
   return (
@@ -139,42 +132,32 @@ export default function Home() {
         </section>
 
         <section id="markets" className="bg-muted/50 py-24">
-          <div className="container space-y-12">
+          <div className="flex flex-col items-center space-y-12 gap-8">
             <h2 className="text-3xl font-bold tracking-tighter text-center sm:text-4xl md:text-5xl">
               How will Bulbasaur help society?
             </h2>
-            {/* <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
-              <Card>
-                <CardContent className="p-6 space-y-2">
-                  <BarChart2 className="h-12 w-12 text-primary" />
-                  <h3 className="text-xl font-bold">Forex Markets</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Trade major, minor, and exotic currency pairs with
-                    confidence using our precise signals.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6 space-y-2">
-                  <LineChart className="h-12 w-12 text-primary" />
-                  <h3 className="text-xl font-bold">Indian Markets</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Get accurate signals for Nifty, Bank Nifty, and other Indian
-                    market instruments.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6 space-y-2">
-                  <Globe2 className="h-12 w-12 text-primary" />
-                  <h3 className="text-xl font-bold">Global Markets</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Access signals for commodities, indices, and cryptocurrency
-                    markets worldwide.
-                  </p>
-                </CardContent>
-              </Card>
-            </div> */}
+            <div className="flex gap-32">
+              <Card
+                title="Safeguarding Wildlife"
+                description="Bulbasaur helps protect forests from devastating wildfires by detecting early signs of fire, preventing large-scale deforestation, and preserving critical habitats for wildlife. By reducing forest loss, it contributes to a healthier environment and a more sustainable future."
+                imageSrc="wildfire.webp"
+                imageAlt="Yosemite National Park"
+                additionalInfo="Established in 1890"
+              />
+              <Card
+                title="Protecting Communities"
+                description="With real-time wildfire detection, Bulbasaur provides early warnings to residents and emergency responders, allowing for faster evacuations and efficient firefighting efforts. By preventing uncontrolled wildfires, it helps save lives, homes, and infrastructure."
+                imageSrc="city.jpg"
+                imageAlt="Golden Gate Bridge"
+                additionalInfo="Opened in 1937"
+              />
+              <Card
+                title="Economic Stability"
+                description="RWildfires threaten farmlands, livestock, and businesses, leading to massive economic losses. Bulbasaur minimizes these risks by detecting fires early, helping farmers, businesses, and outdoor recreation areas stay protected while reducing recovery costs and insurance claims."
+                imageSrc="farm.jpg"
+                imageAlt="Redwood National Park"
+              />
+            </div>
           </div>
         </section>
 
