@@ -10,3 +10,50 @@
   --color-teal: #378e8e;
   --color-turquoise: #70e0bb;
 }
+
+.gradient-title {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 186, 54, 1) 0%,
+    rgba(42, 81, 63, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.simple-info-card {
+  width: 100%;
+  max-width: 20rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+}
+
+.simple-info-card-image {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.simple-info-card-content {
+  padding: 1rem;
+}
+
+.simple-info-card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.simple-info-card-description {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.simple-info-card-additional {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
