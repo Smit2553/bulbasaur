@@ -115,18 +115,18 @@ export default function Emergencies() {
         />
       </div>
 
-      {/* Stats */}
+      {/* Stats with colored numbers */}
       <div className="flex justify-between mb-6">
         <div>
-          <h2 className="text-3xl font-bold">{stats.total}</h2>
+          <h2 className="text-3xl">{stats.total}</h2>
           <p className="text-gray-600">Total</p>
         </div>
         <div>
-          <h2 className="text-3xl font-bold">{stats.critical}</h2>
+          <h2 className="text-3xl text-red-400">{stats.critical}</h2>
           <p className="text-gray-600">Critical</p>
         </div>
         <div>
-          <h2 className="text-3xl font-bold">{stats.resolved}</h2>
+          <h2 className="text-3xl text-green-400">{stats.resolved}</h2>
           <p className="text-gray-600">Resolved</p>
         </div>
       </div>
@@ -137,7 +137,7 @@ export default function Emergencies() {
           <div key={emergency.id} className="p-4 border">
             <div className="flex items-start justify-between">
               <div className="flex gap-3">
-                <AlertCircle className="text-red-500" />
+                <AlertCircle className="text-red-400" />
                 <div>
                   <h3 className="font-semibold">{emergency.title}</h3>
                   <p className="text-gray-600">at {emergency.location}</p>

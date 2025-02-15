@@ -11,7 +11,7 @@ import {
   ArcElement,
 } from "chart.js";
 import { Line, Bar, Doughnut } from "react-chartjs-2";
-import { Droplets, Wind, TreePine } from "lucide-react";
+import { Droplets, Wind, TreePine, Users, MapPin, Home } from "lucide-react";
 
 ChartJS.register(
   CategoryScale,
@@ -26,6 +26,15 @@ ChartJS.register(
 );
 
 export default function WeatherStats() {
+  const locationInfo = {
+    name: "Plumas County",
+    population: "18,807",
+    elevation: "3,494 ft",
+    residentialAreas: "12",
+    nearestCity: "Quincy",
+    evacuationZones: "4",
+  };
+
   const humidityData = {
     labels: ["6am", "9am", "12pm", "3pm", "6pm", "9pm"],
     datasets: [
@@ -60,10 +69,39 @@ export default function WeatherStats() {
   };
 
   return (
-    <div className="p-6 bg-white  shadow border-l-2">
+    <div className="p-6 bg-white shadow border-l-2">
       <h2 className="text-2xl font-semibold mb-6 border-b-1 pb-2">
         Weather Evaluation
       </h2>
+
+      {/* Location Information */}
+      <div className="mb-6 p-4 bg-gray-50 rounded-lg">
+        <div className="flex items-center gap-2 mb-2">
+          <MapPin className="text-[var(--color-forest-green)]" />
+          <h3 className="font-semibold text-lg">{locationInfo.name}</h3>
+        </div>
+        <div className="grid grid-cols-2 gap-4 mt-3">
+          <div className="flex items-center gap-2">
+            <Users className="text-[var(--color-teal)]" />
+            <div>
+              <p className="text-sm text-gray-600">Population</p>
+              <p className="font-medium">{locationInfo.population}</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <Home className="text-[var(--color-teal)]" />
+            <div>
+              <p className="text-sm text-gray-600">Residential Areas</p>
+              <p className="font-medium">{locationInfo.residentialAreas}</p>
+            </div>
+          </div>
+        </div>
+        <div className="mt-2 text-sm text-gray-600">
+          <p>Elevation: {locationInfo.elevation}</p>
+          <p>Nearest City: {locationInfo.nearestCity}</p>
+          <p>Evacuation Zones: {locationInfo.evacuationZones}</p>
+        </div>
+      </div>
 
       {/* Current Conditions */}
       <div className="grid grid-cols-3 gap-4 mb-6">
@@ -142,7 +180,7 @@ export default function WeatherStats() {
                 },
               }}
             />
-            <p className="text-center mt-2 text-red-500 font-semibold">
+            <p className="text-center mt-2 text-red-400 font-semibold">
               High Risk (85%)
             </p>
           </div>
