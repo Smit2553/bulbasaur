@@ -25,7 +25,7 @@ class QuickStats:
         return self.__dict__
 
 
-@app.route('/api/test', methods=['GET'])
+@app.route('/', methods=['GET'])
 def test_route():
     return jsonify({"message": "Backend is working!"})
 
@@ -37,4 +37,6 @@ def info_route():
 
 
 if __name__ == '__main__':
+    # Allow CORS
+    CORS(app)
     app.run(debug=True)
