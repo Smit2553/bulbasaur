@@ -68,7 +68,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 - Luan Nguyen - Full-stack Developer
 - Nga Vu - ML Engineer
-- Smit Devrukhkar - Frontend Developer
+- Smit Devrukhkar - Full-stack Developer
 - Andy Le - Full-stack Developer
 
 ## 🙏 Acknowledgments
