@@ -2,9 +2,9 @@ import { Search, AlertCircle } from "lucide-react";
 
 export default function Emergencies() {
   const stats = {
-    total: 3,
-    critical: 2,
-    resolved: 1,
+    total: 10,
+    critical: 7,
+    resolved: 3,
   };
 
   const emergencies = [
@@ -31,16 +31,80 @@ export default function Emergencies() {
       title: "Creek Fire Emergency",
       location: "Fresno County",
       time: "08:15:22 PM",
-      status: "RESOLVED",
+      status: "CRITICAL",
       acres: "379,895",
+      containment: "30%",
+    },
+    {
+      id: 4,
+      title: "Glass Fire Emergency",
+      location: "Napa County",
+      time: "07:55:41 PM",
+      status: "CRITICAL",
+      acres: "67,484",
+      containment: "25%",
+    },
+    {
+      id: 5,
+      title: "LNU Lightning Complex",
+      location: "Napa/Sonoma County",
+      time: "06:32:18 PM",
+      status: "CRITICAL",
+      acres: "363,220",
+      containment: "15%",
+    },
+    {
+      id: 6,
+      title: "SCU Lightning Complex",
+      location: "Santa Clara County",
+      time: "05:48:33 PM",
+      status: "CRITICAL",
+      acres: "396,624",
+      containment: "35%",
+    },
+    {
+      id: 7,
+      title: "August Complex",
+      location: "Mendocino County",
+      time: "04:27:59 PM",
+      status: "CRITICAL",
+      acres: "1,032,648",
+      containment: "20%",
+    },
+    {
+      id: 8,
+      title: "North Complex",
+      location: "Plumas County",
+      time: "03:15:44 PM",
+      status: "RESOLVED",
+      acres: "318,935",
+      containment: "100%",
+    },
+    {
+      id: 9,
+      title: "River Complex",
+      location: "Trinity County",
+      time: "02:41:12 PM",
+      status: "RESOLVED",
+      acres: "199,343",
+      containment: "100%",
+    },
+    {
+      id: 10,
+      title: "Monument Fire",
+      location: "Trinity County",
+      time: "01:33:27 PM",
+      status: "RESOLVED",
+      acres: "223,124",
       containment: "100%",
     },
   ];
 
   return (
     <div className="p-3 overflow-y-auto border-r-2">
-      <h1 className="text-2xl font-bold mb-4 border-b-1 pb-2">Emergencies</h1>
-
+      <h1 className="text-2xl font-semibold mb-4 border-b-1 pb-2">
+        Emergencies
+      </h1>
       {/* Search Bar */}
       <div className="relative mb-6">
         <Search className="absolute left-3 top-2.5 text-gray-400" size={20} />
@@ -70,7 +134,7 @@ export default function Emergencies() {
       {/* Emergency List */}
       <div className="space-y-4">
         {emergencies.map((emergency) => (
-          <div key={emergency.id} className="p-4 border rounded-lg">
+          <div key={emergency.id} className="p-4 border">
             <div className="flex items-start justify-between">
               <div className="flex gap-3">
                 <AlertCircle className="text-red-500" />

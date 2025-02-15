@@ -61,7 +61,7 @@ export default function WeatherStats() {
 
   return (
     <div className="p-6 bg-white  shadow border-l-2">
-      <h2 className="text-2xl font-bold mb-6 border-b-1 pb-2">
+      <h2 className="text-2xl font-semibold mb-6 border-b-1 pb-2">
         Weather Evaluation
       </h2>
 
