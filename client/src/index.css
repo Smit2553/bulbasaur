@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
 :root {
+  font-family: "Space Grotesk", sans-serif;
+
+  /* Color Variables */
+  --color-mint-light: #cef79f;
+  --color-lime-green: #83ba36;
+  --color-forest-green: #2a513f;
+  --color-teal: #378e8e;
+  --color-turquoise: #70e0bb;
 }
 
 .gradient-title {
