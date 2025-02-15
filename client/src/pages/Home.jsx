@@ -106,9 +106,11 @@ export default function Home() {
                           Bulbasaur in Action: Early Wildfire Detection
                         </h3>
                       </div>
-                      <button className="px-4 py-2 rounded-lg border-1 border-gray-300 hover:bg-[#83ba36] hover:cursor-pointer hover:border-black">
-                        Live Demo{" "}
-                      </button>
+                      <Link to="/dashboard">
+                        <button className="px-4 py-2 rounded-lg border-1 border-gray-300 hover:bg-[#83ba36] hover:cursor-pointer hover:border-black">
+                          Live Demo{" "}
+                        </button>
+                      </Link>
                     </div>
                     <div className="aspect-[4/3] rounded-lg bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 flex items-center justify-center">
                       <img
