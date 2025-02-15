@@ -66,10 +66,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 👥 Team
 
-- Luan Nguyen - Full-stack Developer
-- Nga Vu - ML Engineer
-- Smit Devrukhkar - Full-stack Developer
-- Andy Le - Full-stack Developer
+- Luan Nguyen - Full-stack Developer - https://www.linkedin.com/in/luanthiennguyen/
+- Nga Vu - ML Engineer - https://www.linkedin.com/in/nga-vu-269626226/
+- Smit Devrukhkar - Full-stack Developer - https://www.linkedin.com/in/smitsd/
+- Andy Le - Full-stack Developer - https://www.linkedin.com/in/4ndyle/
 
 ## 🙏 Acknowledgments
 
