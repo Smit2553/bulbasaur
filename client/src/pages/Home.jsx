@@ -63,12 +63,12 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-4">
-                  {/* <Button size="lg" className="gap-2">
-                    Start Trading <ArrowRight className="h-4 w-4" />
-                  </Button>
-                  <Button size="lg" variant="outline">
-                    View Demo
-                  </Button> */}
+                  <button className="bg-[#83ba36] text-lg px-8 py-4 rounded-lg border-1 border-gray-300 hover:bg-[#2a513f] hover:cursor-pointer hover:border-black font-semibold text-white">
+                    Use Bulbasaur{" "}
+                  </button>
+                  <button className="text-lg px-8 py-4 rounded-lg border-1 border-gray-300 hover:bg-[#2a513f] hover:cursor-pointer hover:border-black font-semibold hover:text-white">
+                    Demo{" "}
+                  </button>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-8">
                   <div className="space-y-2">
@@ -104,16 +104,13 @@ export default function Home() {
                         </h3>
                       </div>
                       <button className="px-4 py-2 rounded-lg border-1 border-gray-300 hover:bg-[#83ba36] hover:cursor-pointer hover:border-black">
-                        demo{" "}
+                        Live Demo{" "}
                       </button>
-                      {/* <Button variant="outline" size="sm">
-                        Live Demo
-                      </Button> */}
                     </div>
                     <div className="aspect-[4/3] rounded-lg bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 flex items-center justify-center">
                       <img
                         src="placeholder.webp"
-                        className="rounded-2xl max-w-[500px] mt-6 border-1 border-gray-300"
+                        className=" max-w-[500px] mt-6 border-1 border-gray-300"
                       />
                     </div>
                     <div className="grid grid-cols-3 gap-4">
@@ -153,7 +150,7 @@ export default function Home() {
               />
               <Card
                 title="Economic Stability"
-                description="RWildfires threaten farmlands, livestock, and businesses, leading to massive economic losses. Bulbasaur minimizes these risks by detecting fires early, helping farmers, businesses, and outdoor recreation areas stay protected while reducing recovery costs and insurance claims."
+                description="Wildfires threaten farmlands, livestock, and businesses, leading to massive economic losses. Bulbasaur minimizes these risks by detecting fires early, helping farmers, businesses, and outdoor recreation areas stay protected while reducing recovery costs and insurance claims."
                 imageSrc="farm.jpg"
                 imageAlt="Redwood National Park"
               />
@@ -165,11 +162,11 @@ export default function Home() {
           <div className="container space-y-12">
             <div className="text-center space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                See It In Action
+                See Bulbasaur In Action
               </h2>
               <p className="text-xl text-muted-foreground max-w-[42rem] mx-auto">
-                Watch how the Ved Indicator provides precise trading signals in
-                real-time market conditions.
+                Watch how Bulbasaur detects wildfires with precision in
+                real-time environmental conditions.
               </p>
             </div>
             <div className="max-w-4xl mx-auto">
@@ -194,7 +191,7 @@ export default function Home() {
       <footer className="border-t py-8">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-sm text-muted-foreground">
-            © 2024 Ved Indicator. All rights reserved.
+            © 2024 Fiber. All rights reserved.
           </p>
           <div className="flex items-center space-x-4">
             <Link
