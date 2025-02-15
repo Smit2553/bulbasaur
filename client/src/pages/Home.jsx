@@ -118,7 +118,10 @@ export default function Home() {
                       </Button> */}
                     </div>
                     <div className="aspect-[4/3] rounded-lg bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 flex items-center justify-center">
-                      <BarChart2 className="h-24 w-24 text-primary/40" />
+                      <img
+                        src="placeholder.webp"
+                        className="rounded-2xl max-w-[500px] mt-6 border-1 border-gray-300"
+                      />
                     </div>
                     <div className="grid grid-cols-3 gap-4">
                       {[1, 2, 3].map((i) => (
@@ -138,7 +141,7 @@ export default function Home() {
         <section id="markets" className="bg-muted/50 py-24">
           <div className="container space-y-12">
             <h2 className="text-3xl font-bold tracking-tighter text-center sm:text-4xl md:text-5xl">
-              Markets We Cover
+              How will Bulbasaur help society?
             </h2>
             {/* <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
               <Card>
