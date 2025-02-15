@@ -23,7 +23,7 @@ An advanced AI-powered system for real-time wildfire detection using satellite i
 - 95% detection accuracy
 - Multi-dataset training approach
 
-![Pipeline](pipeline.png)
+![Pipeline](image.png)
 
 ### Datasets
 
@@ -56,7 +56,7 @@ An advanced AI-powered system for real-time wildfire detection using satellite i
 
 - Python (Machine Learning & Backend)
 - TensorFlow/PyTorch (Deep Learning)
-- React.js (Frontend)
+- React.js (Frontend) + MapBox API
 - Weather API Integration
 - Satellite Image Processing Libraries
 
