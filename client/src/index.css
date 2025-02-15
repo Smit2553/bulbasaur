@@ -2,3 +2,13 @@
 
 :root {
 }
+
+.gradient-title {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 186, 54, 1) 0%,
+    rgba(42, 81, 63, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
