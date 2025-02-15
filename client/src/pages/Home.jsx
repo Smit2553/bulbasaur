@@ -1,3 +1,8 @@
+import DefaultMap from "../components/DefaultMap";
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <DefaultMap />
+    </div>
+  );
 }
