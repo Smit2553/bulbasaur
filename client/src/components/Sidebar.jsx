@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   House,
   CircleHelp,
@@ -12,14 +13,30 @@ import {
 export default function Sidebar() {
   return (
     <aside className="flex flex-col p-4 border-r-1 w-[60px] gap-5 h-screen items-center">
-      <House />
-      <Minus />
-      <CircleHelp />
-      <CircleAlert />
-      <Share2 />
-      <AudioLines />
-      <ChartNoAxesColumn />
-      <Settings />
+      <Link to="/">
+        <House />
+      </Link>
+      <Link to="/dashboard">
+        <Minus />
+      </Link>
+      <Link to="/dashboard">
+        <CircleHelp />
+      </Link>
+      <Link to="/dashboard">
+        <CircleAlert />
+      </Link>
+      <Link to="/dashboard">
+        <Share2 />
+      </Link>
+      <Link to="/dashboard">
+        <AudioLines />
+      </Link>
+      <Link to="/dashboard">
+        <ChartNoAxesColumn />
+      </Link>
+      <Link to="/dashboard">
+        <Settings />
+      </Link>
     </aside>
   );
 }
