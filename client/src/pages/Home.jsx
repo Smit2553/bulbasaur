@@ -138,21 +138,21 @@ export default function Home() {
                 title="Safeguarding Wildlife"
                 description="Bulbasaur helps protect forests from devastating wildfires by detecting early signs of fire, preventing large-scale deforestation, and preserving critical habitats for wildlife. By reducing forest loss, it contributes to a healthier environment and a more sustainable future."
                 imageSrc="wildfire.webp"
-                imageAlt="Yosemite National Park"
-                additionalInfo="Established in 1890"
+                imageAlt="Wilfire"
+                additionalInfo=""
               />
               <Card
                 title="Protecting Communities"
                 description="With real-time wildfire detection, Bulbasaur provides early warnings to residents and emergency responders, allowing for faster evacuations and efficient firefighting efforts. By preventing uncontrolled wildfires, it helps save lives, homes, and infrastructure."
                 imageSrc="city.jpg"
-                imageAlt="Golden Gate Bridge"
-                additionalInfo="Opened in 1937"
+                imageAlt="City"
+                additionalInfo=""
               />
               <Card
                 title="Economic Stability"
                 description="Wildfires threaten farmlands, livestock, and businesses, leading to massive economic losses. Bulbasaur minimizes these risks by detecting fires early, helping farmers, businesses, and outdoor recreation areas stay protected while reducing recovery costs and insurance claims."
                 imageSrc="farm.jpg"
-                imageAlt="Redwood National Park"
+                imageAlt="farm"
               />
             </div>
           </div>
