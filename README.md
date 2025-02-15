@@ -1,8 +1,9 @@
-# React + Vite
+Project Bulbasaur is an innovative wildfire early warning system that leverages multiple technologies and APIs to protect communities from fire hazards. The system begins with an Azure Map Package integration that allows users to select their current location. Once a location is chosen, the system extracts the precise coordinates, which then triggers two parallel processes:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+    It queries a Weather API to gather critical environmental data such as humidity and dryness levels
 
-Currently, two official plugins are available:
+    It extracts satellite or aerial imagery of the specified coordinates
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The gathered imagery is processed through a Wildfire Classification Model that analyzes the visual data for signs of wildfire activity. If the model detects a wildfire, it automatically triggers the Twilio API to send immediate alert messages to users in the affected area. All this information, including weather conditions and classification results, is aggregated and displayed on a web interface for comprehensive monitoring.
+
+This automated pipeline demonstrates a sophisticated approach to early wildfire detection by combining geographical data, weather metrics, image analysis, and instant communication capabilities, potentially providing crucial early warnings that could save lives and property.
