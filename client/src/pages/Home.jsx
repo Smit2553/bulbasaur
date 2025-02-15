@@ -188,8 +188,8 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="border-t py-8">
-        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
+      <footer className="border-t py-8 w-full px-24">
+        <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <p className="text-sm text-muted-foreground">
             © 2024 Fiber. All rights reserved.
           </p>
